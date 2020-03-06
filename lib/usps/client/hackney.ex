@@ -1,4 +1,10 @@
 defmodule Usps.Client.Hackney do
+  @moduledoc """
+  Default HTTP client using `hackeny`.
+  """
+
+  @behaviour Usps.Client
+
   def request(url) do
     url
     |> :hackney.request()

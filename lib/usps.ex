@@ -1,4 +1,19 @@
 defmodule Usps do
+  @moduledoc """
+  Light API wrapper around the XML based API for USPS.
+
+  API requests are broken down into two steps.
+  1. Create a `Operation` struct
+  2. Pass the `Operation` struct into `request/1`
+  """
+
+  alias Usps.Client
+  alias Usps.Operation
+
+  @doc """
+  Execute a request to the USPS API using the given operation.
+  """
+  @spec request(operation :: Operation.t()) :: Client.success() | Client.error()
   def request(operation) do
     configuration = operation.configuration
 
