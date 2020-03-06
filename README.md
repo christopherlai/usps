@@ -1,5 +1,5 @@
 # USPS
-A wrapper around the [USPS XML API](#)(https://www.usps.com/business/web-tools-apis/).
+A wrapper around the [USPS XML API](https://www.usps.com/business/web-tools-apis/).
 
 ## Installation
 The package can be installed by adding `usps` to your list of dependencies in `mix.exs` along with `hackney`.
