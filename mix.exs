@@ -34,6 +34,7 @@ defmodule Usps.MixProject do
   defp deps do
     [
       {:credo, "~> 1.2", only: [:dev, :test], runtime: false},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:hackney, "~> 1.15", optional: true},
       {:html_sanitize_ex, "~> 1.4"},
       {:mox, "~> 0.5", only: [:test]},
